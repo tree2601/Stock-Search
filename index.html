@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" >
+        <title>csci_571_hw6</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="static/main.css">
+        
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/data.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+<script src="static/script.js"></script>
+              
+    </head>
+    <body>
+        
+        <header class= 'main_header'>
+        
+        <div id = 'header'>
+            Stock Search
+        </div>
+            
+        <div id = 'search_area'>
+        <button id = 'search_button' onclick = "my_search()" > </button>
+        <input id = "search_box" type="text" placeholder="Enter Stock Ticker Symbol"></input>     
+        <button id='search_cancel' onclick = "clean_search_box()"> </button>
+            
+            </div>
+
+        
+        
+        </header>
+    
+    <div id = 'alert_box'>
+    </div>
+        
+    
+    <div class="tab_div" id = 'my_tab_div'>
+        <button class="tab" onclick="openresult(1)">Company</button>
+        <button class="tab" onclick="openresult(2)">Stock Summary</button>
+        <button class="tab" onclick="openresult(3)">Charts</button>
+        <button class="tab" onclick="openresult(4)">Latest News</button>
+    </div>
+    
+    
+        <div id= 'error' ></div>
+    
+        <div id = 'result1' class = 'result'>  </div>
+    
+    
+        <div id = 'result2' class = 'result'> 
+            <div id = 'result2_part1'></div>
+            <div id = 'result2_part2'></div>
+        </div>
+    
+        <div id = 'result3' class = 'result' >  </div>
+        <div id = 'result4' class = 'result'> </div>
+        <div id="container" class = 'result' "></div>
+         
+        
+        
+    </body>
+    
+    
+</html>
